@@ -1,0 +1,53 @@
+[
+    {
+        "id":1,
+        "title": "Purchase History",
+        "description":"View all your bookings & purchases",
+        "image": "./Ticket.png"
+      },{
+        "id":2,
+        "title": "Elderly Detail",      
+          "description":"View all your bookings & purchases",
+        "image":"Elderly.png"
+      },
+      {
+        "id":3,
+        "title": "Help & Support",
+        "description":"View all your bookings & purchases",
+        "image":"question.png"
+    
+      },
+      {
+        "id":4,
+        "title": "Accounts & Settings",
+        "description":"View all your bookings & purchases",
+
+        "image":"Settings.png"
+    
+      },
+      {
+        "id":5,
+        "title": "Care Points",
+        "description":"View all your bookings & purchases",
+
+        "image":"CarePoints.png"
+    
+      },
+      {
+        "id":6,
+        "title": "Review",
+        "description":"View all your bookings & purchases",
+
+        "image":"Review.png"
+        
+      },
+      {
+        "id":7,
+        "title": "Host your Events",
+        "description":"View all your bookings & purchases",
+
+        "image":"HostEvents.png"
+    
+      }
+
+]
