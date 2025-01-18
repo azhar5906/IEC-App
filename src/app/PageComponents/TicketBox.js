@@ -3,11 +3,13 @@ import Image from 'next/image'
 import { url } from 'inspector'
 
 export default function TicketBox() {
+
   return (
+    <>
     
                
 <div className='main-ticket'>
-            <div className='date-box'>-------</div>
+        <div className='date-box'>-------</div>
 
     <div className='ticket-box' style={{width:"398px", height:"160px", backgroundColor:"#FFFFFF", borderRadius:"10px"}}>
         <div className='section1' style={{ display:"flex", flexDirection:"row"}}>
@@ -17,7 +19,6 @@ export default function TicketBox() {
                 alt='image'
                 width={60}
                 height={80}
-                
                 />
             </div>
 
@@ -54,7 +55,7 @@ export default function TicketBox() {
     </div>
 
 
-
+    </>
 
   )
 }

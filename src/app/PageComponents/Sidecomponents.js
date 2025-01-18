@@ -3,12 +3,11 @@ import { Badge, Box, Card, HStack, Image } from "@chakra-ui/react"
 
 
 export default function Sidecomponents(index) {
+  
     const {data} = index
-
-    
+  
   return (
     <>
-
     <Card.Root flexDirection="row" overflow="hidden" alignItems="center"
         justifyContent="center" backgroundColor="#fff" height="56px" border="none" borderRadius="none">
     <Image
@@ -18,9 +17,8 @@ export default function Sidecomponents(index) {
       maxH="14.20px"
       src={data.image}
       alt="Caffe Latte"
-      
-     
-    />
+      />
+
     <Box   color=" #333333" >
       <Card.Body   >
         <Card.Title  fontSize="12px" fontWeight="600" >{data.title}</Card.Title>
