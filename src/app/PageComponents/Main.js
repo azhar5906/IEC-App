@@ -3,19 +3,22 @@ import Image from 'next/image'
     import { Avatar } from "@/components/ui/avatar"
 import Sidecomponents from "./Sidecomponents"
 import CardData from './Events.json'
-import { Button } from "@chakra-ui/react"
+import { Button, Popover } from "@chakra-ui/react"
 import { Link } from "@chakra-ui/react"
 import PurchaseHis from "./PurchaseHis"
-import items from "./PurchaseHis"
+import SideComponent from "@/app/blogs/drawer"
+import Popbox from "@/app/PageComponents/Popover"
+import ConfirmDetailsPop from "@/app/PageComponents/ConfirmDetails-pop"
 
 
 
-export default function Sidebar(data,items) {
+export default function Main(data,items) {
     const index={data}
   return (
+   
     <main style={{display:"flex", justifyContent:"center", backgroundColor: "#F3F3F3"}}>
     
-    <div className='main-container' style={{  width:"1176px",height:"935px",marginTop:"21px", display:"flex", flexDirection:"row", backgroundColor:"#ffffff"}}>
+    <div className='main-container' style={{  width:"1176px",height:"auto", backgroundColor:"white",marginTop:"21px", display:"flex", flexDirection:"row", }}>
         <div className='sidebar' style={{width:"275px",height:"105px"}}>
             <div className='person-info-box' style={{backgroundColor:"#742f8b", display:"flex",alignItems:"center", justifyContent:"center" }}>
 
@@ -59,19 +62,41 @@ export default function Sidebar(data,items) {
         </div>
            
         <div className='section2'>
+       <div>
        <PurchaseHis/>
 
+       </div>
+       <div style={{marginTop:"24px", marginLeft:"24px", backgroundColor:" #F3F3F3", width:"852px", padding:"20px", height:"887px", }}>
+                <SideComponent />
+
+       </div>
+
+       {/* Regestration completed popover */}
+
+        <div className='popover'>
+        Regestration completed popover
+
+            <Popbox/>
         </div>
+
+       {/* Confirm Details  popover */}<br></br>
+
+        <div className='details-popover'>
+            <p>Confirm Details  popover</p>
+        
+            <ConfirmDetailsPop />
+        </div>
+
+       </div>
+
+
+
+        
 
     </div>
 
-     
-
-
-
-
-
     </main>
+    
    
       
   )

@@ -2,6 +2,8 @@ import { Flex, Image } from '@chakra-ui/react'
 import React from 'react'
 import "./Navbar.css"
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
+ 
 import { MenuContent,  MenuItem,  MenuRoot,  MenuTrigger,} from "@/components/ui/menu"
 // import { Button } from "@/component/s/ui/button"
 import { DrawerActionTrigger, DrawerBackdrop, DrawerBody,DrawerCloseTrigger, 
@@ -30,10 +32,11 @@ export default function Navbar(index) {
         </div>
 
         <div className='navbar-links' style={{color:"#333333", width:"450px",  display:"flex",justifyContent:"space-between", marginLeft:"41.71px"}}>
-            <span className='nav-list' style={{fontSize:"16px",fontWeight:"500px"}}>Events</span>
-            <span style={{fontSize:"16px",fontWeight:"500px", marginLeft:"24px" }}>Nursing</span>
-            <span style={{fontSize:"16px",fontWeight:"500px", marginLeft:"24px" }}>Sr. Care Packages</span>
-            <span style={{fontSize:"16px",fontWeight:"500px", marginLeft:"24px" }}>Celebrity</span>
+      
+            <Link href="/pages.js" className='nav-list' style={{fontSize:"16px",fontWeight:"500px"}} >Events</Link>
+            <a  href="#"style={{fontSize:"16px",fontWeight:"500px", marginLeft:"24px" }}>Nursing</a>
+            <a style={{fontSize:"16px",fontWeight:"500px", marginLeft:"24px" }}>Sr. Care Packages</a>
+            <a style={{fontSize:"16px",fontWeight:"500px", marginLeft:"24px" }}>Celebrity</a>
         </div>
 
 
@@ -50,7 +53,8 @@ export default function Navbar(index) {
                 <MenuRoot  style={{ backgroundColor:"#333333" , }} >
                     <MenuTrigger asChild>
                         <li variant="outline" size="sm" border={"none"} style={{display:"Flex" , alignItems:"center",margin:"16px", color:" #666666", fontSize:"16px", fontWeight:"600px"}}>
-                            Mumbai <Image src='./dropdown-menu.png' style={{width:"7px", height:"5px", marginLeft:"6px"}}/>
+                            Mumbai 
+                            <Image src='./dropdown-menu.png' style={{width:"7px", height:"5px", marginLeft:"6px"}}/>
                         </li>
                     </MenuTrigger>
                     <MenuContent>

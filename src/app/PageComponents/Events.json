@@ -3,26 +3,33 @@
         "id":1,
         "title": "Purchase History",
         "description":"View all your bookings & purchases",
-        "image": "./Ticket.png"
-      },{
+        "image": "./Ticket.png",
+        "arrow":"right-arrow.png"
+      },
+      {
         "id":2,
         "title": "Elderly Detail",      
           "description":"View all your bookings & purchases",
-        "image":"Elderly.png"
+        "image":"Elderly.png",
+        "arrow":"right-arrow.png"
+
+    
       },
       {
         "id":3,
         "title": "Help & Support",
         "description":"View all your bookings & purchases",
-        "image":"question.png"
+        "image":"question.png",
+        "arrow":"right-arrow.png"
     
       },
       {
         "id":4,
         "title": "Accounts & Settings",
         "description":"View all your bookings & purchases",
+        "image":"Settings.png",
+        "arrow":"right-arrow.png"
 
-        "image":"Settings.png"
     
       },
       {
@@ -30,7 +37,9 @@
         "title": "Care Points",
         "description":"View all your bookings & purchases",
 
-        "image":"CarePoints.png"
+        "image":"CarePoints.png",
+        "arrow":"right-arrow.png"
+
     
       },
       {
@@ -38,7 +47,9 @@
         "title": "Review",
         "description":"View all your bookings & purchases",
 
-        "image":"Review.png"
+        "image":"Review.png",
+        "arrow":"right-arrow.png"
+
         
       },
       {
@@ -46,7 +57,8 @@
         "title": "Host your Events",
         "description":"View all your bookings & purchases",
 
-        "image":"HostEvents.png"
+        "image":"HostEvents.png",
+        "arrow":"right-arrow.png"
     
       }
 

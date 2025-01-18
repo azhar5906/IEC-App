@@ -1,10 +1,10 @@
 import Navbar from "./PageComponents/Navbar" 
-import Sidebar from "./PageComponents/Sidebar"
+import Main from "./PageComponents/Main"
 export default function Home() {
   return (
     <>
       <Navbar/>
-      <Sidebar/>
+      <Main/>
       
 
     </>
