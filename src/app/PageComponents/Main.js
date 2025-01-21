@@ -9,10 +9,13 @@ import PurchaseHis from "./PurchaseHis"
 import SideComponent from "@/app/blogs/drawer"
 import Popbox from "@/app/PageComponents/Popover"
 import ConfirmDetailsPop from "@/app/PageComponents/ConfirmDetails-pop"
+import Resend from "@/app/PageComponents/Resend"
 
 
 
-export default function Main(data,items) {
+
+
+export default function Main(data,) {
     const index={data}
   return (
    
@@ -87,6 +90,13 @@ export default function Main(data,items) {
             <ConfirmDetailsPop />
         </div>
 
+       {/* Resend  popover */}<br></br>
+
+        <div className='resend-pop'>
+            <Resend />
+
+        </div>
+
        </div>
 
 
@@ -99,5 +109,5 @@ export default function Main(data,items) {
     
    
       
-  )
+)
 }

@@ -1,14 +1,10 @@
 "use client"
 import React from 'react'
-import { Box, Group } from "@chakra-ui/react"
 import { Button } from "@/components/ui/button"
 import {
-  PopoverArrow,
   PopoverBody,
   PopoverCloseTrigger,
   PopoverContent,
-  PopoverFooter,
-  PopoverHeader,
   PopoverRoot,
   PopoverTrigger,
 } from "@/components/ui/popover"
@@ -23,7 +19,7 @@ export default function Popbox() {
     <div style={{backgroundColor:"#FFFFFF", }}>
     <PopoverRoot >
     <PopoverTrigger asChild  bgColor={"#FFFFFF"}>
-      <Button size="sm" variant="outline">
+      <Button size="sm" variant="outline" color={"black"}>
         Submit
       </Button>
     </PopoverTrigger>

@@ -1,9 +1,8 @@
 import React from 'react'
-import { Input, Stack, Textarea } from "@chakra-ui/react"
+import { Input, Stack} from "@chakra-ui/react"
 import { Button } from "@/components/ui/button"
 import { Field } from "@/components/ui/field"
 import {
-  PopoverArrow,
   PopoverBody,
   PopoverCloseTrigger,
   PopoverContent,
@@ -15,7 +14,7 @@ export default function ConfirmDetailsPop() {
   return (
     <PopoverRoot>
     <PopoverTrigger asChild >
-      <Button size="sm" variant="outline">
+      <Button size="sm" variant="outline" color={"black"}>
         Continue
       </Button>
     </PopoverTrigger>
@@ -36,7 +35,7 @@ export default function ConfirmDetailsPop() {
         </div>
       </PopoverBody>
       <PopoverCloseTrigger />
-      <Button size="sm" variant="outline">
+      <Button size="sm" variant="outline" color={"black"} margin={"10px 16px 10px 16px"} _hover={{color:"white" }}>
         Next
       </Button>
     </PopoverContent>
