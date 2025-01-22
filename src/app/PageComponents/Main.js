@@ -10,6 +10,7 @@ import SideComponent from "@/app/blogs/drawer"
 import Popbox from "@/app/PageComponents/Popover"
 import ConfirmDetailsPop from "@/app/PageComponents/ConfirmDetails-pop"
 import Resend from "@/app/PageComponents/Resend"
+import OrderSummary from "@/app/PageComponents/OrderSummarry"
 
 
 
@@ -95,6 +96,14 @@ export default function Main(data,) {
         <div className='resend-pop'>
             <Resend />
 
+        </div>
+        <br></br>
+        <br></br>
+
+
+        <div>
+
+            <OrderSummary/>
         </div>
 
        </div>

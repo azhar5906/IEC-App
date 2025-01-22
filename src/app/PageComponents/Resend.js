@@ -12,7 +12,7 @@ import {
 
 export default function Resend() {
   return (
-        <PopoverRoot >
+        <PopoverRoot>
           <PopoverTrigger asChild>
             <Button size="sm" variant="outline" color={"black"}>
               Resend Pop

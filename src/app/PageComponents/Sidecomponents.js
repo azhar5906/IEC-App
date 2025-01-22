@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Card,Image } from "@chakra-ui/react"
+import { Box, Card,Image } from "@chakra-ui/react"  
 
 
 export default function Sidecomponents(index) {
