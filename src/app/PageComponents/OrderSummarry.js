@@ -1,6 +1,6 @@
 "use client";
 
-import { Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { Alert } from "@/components/ui/alert"
 
@@ -100,12 +100,11 @@ export default function OrderSummary() {
                   width={20}
                   height={20}
                   alt="image"
-
                  />
-                  <p>
+                  <Box>
                     <Text fontWeight={"600"} fontSize={"12px"} lineHeight={"14.54px"} marginLeft="6px">Unlock offers or Apply Promocodes</Text>
                     <Text fontWeight={"400"} fontSize={"10px"} lineHeight={"20px"} marginLeft="6px">Lorem ipsum dolor sit amet, consectetur</Text>
-                  </p>
+                  </Box>
 
                 </div>
           </div>
