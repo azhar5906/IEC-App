@@ -37,7 +37,7 @@ interface AvatarFallbackProps extends ChakraAvatar.FallbackProps {
 }
 
 const AvatarFallback = React.forwardRef<HTMLDivElement, AvatarFallbackProps>(
-  function AvatarFallback(props, ref) {
+function AvatarFallback(props, ref) {
     const { name, icon, children, ...rest } = props
     return (
       <ChakraAvatar.Fallback ref={ref} {...rest}>

@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button"
 export default function EmailVerify() {
   return (
     <>
-    <div className='NumberVerifyContainer'  style={{ marginTop:"100px",height:"220px", width:"353px",  backgroundColor:"#ffffff", mariginBottom:"50px", }}>
+    <div className='NumberVerifyContainer'  style={{ marginTop:"100px",height:"220px", width:"353px",  backgroundColor:"#ffffff", mariginBottom:"50px", marginBottom:"50px"   }}>
+        {/* marginBottom is given for the space between the two divs */}
 
 <li style={{ marginTop:"23px", height:"19px", fontWeight:"600", fontSize:"18px", lineHeight:"21px", color:"#333333",}}>
 Verify your Email Id</li>

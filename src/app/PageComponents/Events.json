@@ -4,7 +4,8 @@
         "title": "Purchase History",
         "description":"View all your bookings & purchases",
         "image": "./Ticket.png"
-      },{
+      },
+      {
         "id":2,
         "title": "Elderly Detail",      
           "description":"View all your bookings & purchases",

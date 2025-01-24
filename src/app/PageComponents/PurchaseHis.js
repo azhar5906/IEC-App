@@ -1,37 +1,36 @@
 import React from 'react'
-import TicketBox from "./TicketBox"
+import TicketBox from './TicketBox'
+import { VStack, Flex, Text, Image, HStack, Box , Grid } from '@chakra-ui/react'
 
 
 export default function PurchaseHis() {
 
   return (
     <>
-    
-    <div clallName="PurchaseHistory" style={{marginTop:"24px", marginLeft:"24px", backgroundColor:" #F3F3F3", width:"852px", padding:"20px", height:"887px",  display:"grid", gridTemplateColumns:"auto auto"}}>
-    <li className='ph' style={ { fontSize:"16px", fontWeight:"600", height:"28px"}}>Purchase History</li>
+       <VStack height="887px" width="852px" bgColor="#F3F3F3" justifyContent="flex-start" alignItems="start" marginLeft={"20px"} marginTop={"24px"} >
 
-    <div style={{  }} >
+            <Flex  marginLeft={"20px"} height={"28px"} direction={"row"} justifyContent={"space-between"} alignItems={"center"} >
+                <Text fontSize={"16px"} fontWeight={"600"}>Purchase History</Text>
+            </Flex>
 
+            <Box  marginLeft={"20px"} marginTop={"24px"}>
+              <Grid templateColumns="repeat(2, 1fr)" gap={5}>
+                  <TicketBox/>
+              </Grid>
+            </Box>
 
-    </div>
-      
-
-    <div className='ticket-holder' style={{display:"grid", gridTemplateColumns:"auto auto",columnGap:"20px", marginTop:"-60px" }}>
-            <TicketBox />
-            <TicketBox />
-            <TicketBox />
-            <TicketBox />
-            <TicketBox />
-            <TicketBox />
-            <TicketBox />
-            <TicketBox />
-        </div>
-
-      
+          
+            
 
 
 
-    </div>
+
+
+
+
+
+
+        </VStack>
     </>
 
   )

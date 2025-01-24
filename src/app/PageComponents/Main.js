@@ -6,15 +6,17 @@ import CardData from './Events.json'
 import { Button } from "@chakra-ui/react"
 import { Link } from "@chakra-ui/react"
 import PurchaseHis from "./PurchaseHis"
-import items from "./PurchaseHis"
 import HelpSupport from "./Help&Support"
 import LoginRegister from "./Login&Register"
 import EmailLogin from "./EmailLogin"
 import NumberVerify from './NumberVerify'
 import EmailVerify from './EmailVerify'
+import ElderlyDatails from './ElderlyDatails'
+import OrderSummary from './OrderSummary'
 
 
-export default function Main(data,items) {
+
+export default function Main(data) {
     const index={data}
 
   return (
@@ -81,6 +83,10 @@ export default function Main(data,items) {
                 <NumberVerify/>
                 <EmailLogin/>
                 <EmailVerify/>
+                <ElderlyDatails/>
+                <OrderSummary/>
+
+                
 
             </div>
     </main>    
