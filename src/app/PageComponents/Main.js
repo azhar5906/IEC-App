@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Avatar } from "@/components/ui/avatar"
 import Sidecomponents from "./Sidecomponents"
 import CardData from './Events.json'
-import { Button} from "@chakra-ui/react"
+import { Box, Button, VStack} from "@chakra-ui/react"
 import { Link } from "@chakra-ui/react"
 import PurchaseHis from "./PurchaseHis"
 import SideComponent from "@/app/blogs/drawer"
@@ -12,6 +12,7 @@ import ConfirmDetailsPop from "@/app/PageComponents/ConfirmDetails-pop"
 import Resend from "@/app/PageComponents/Resend"
 import OrderSummary from "@/app/PageComponents/OrderSummarry"
 import TicketDetail from "@/app/PageComponents/TicketDetail"
+import Sidebar from '@/app/PageComponents/Sidebar'
 
 
 
@@ -21,9 +22,9 @@ export default function Main(data,) {
     const index = { data }
     return (
 
-        <main style={{ display: "flex", justifyContent: "center", backgroundColor: "#F3F3F3" }}>
+        <VStack>
 
-            <div className='main-container' style={{ width: "1176px", height: "auto", backgroundColor: "white", marginTop: "21px", display: "flex", flexDirection: "row", }}>
+            <Box className='main-container' style={{ width: "1176px", height: "auto", backgroundColor: "white", marginTop: "21px", display: "flex", flexDirection: "row", }}>
                 <div className='sidebar' style={{ width: "275px", height: "105px" }}>
                     <div className='person-info-box' style={{ backgroundColor: "#742f8b", display: "flex", alignItems: "center", justifyContent: "center" }}>
 
@@ -112,6 +113,9 @@ export default function Main(data,) {
                     <div>
                         <TicketDetail />
                     </div>
+                    
+
+                        <Sidebar/>
 
 
 
@@ -122,9 +126,9 @@ export default function Main(data,) {
 
 
 
-            </div>
+            </Box>
 
-        </main>
+        </VStack>
 
 
 
