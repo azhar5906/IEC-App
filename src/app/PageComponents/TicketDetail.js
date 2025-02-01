@@ -54,7 +54,7 @@ export default function TicketDetail() {
         <br></br>
         <br></br>
         <br></br>
-        hello
+        
         </>
     )
 }

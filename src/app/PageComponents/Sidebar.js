@@ -2,7 +2,6 @@
 
 import { 
   Box, 
-  Avatar, 
   Text, 
   VStack, 
   Flex, 
@@ -10,18 +9,15 @@ import {
   Button,
   Link, 
   Group,
-  Stack
   // Divider 
 } from "@chakra-ui/react";
 
 import { 
-  FiLogOut, 
-  FiShare2, 
+  FiBookmark,
   FiChevronRight, 
   FiSettings, 
   FiHelpCircle, 
   FiUser, 
-  FiBookmark, 
   FiHeart, 
   FiStar
 } from "react-icons/fi";

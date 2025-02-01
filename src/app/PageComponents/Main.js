@@ -13,6 +13,7 @@ import Resend from "@/app/PageComponents/Resend"
 import OrderSummary from "@/app/PageComponents/OrderSummarry"
 import TicketDetail from "@/app/PageComponents/TicketDetail"
 import Sidebar from '@/app/PageComponents/Sidebar'
+import Sidebar2 from '@/app/PageComponents/Sidebar2'
 
 
 
@@ -113,10 +114,14 @@ export default function Main(data,) {
                     <div>
                         <TicketDetail />
                     </div>
-                    
 
+
+                        <div>
                         <Sidebar/>
 
+                        </div>
+
+                        <div><Sidebar2/></div>
 
 
 

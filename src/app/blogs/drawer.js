@@ -1,6 +1,6 @@
 import React from 'react'
 import { Avatar } from "@/components/ui/avatar"
-import Image from 'next/image'
+import Image from 'next/image' 
 import { Box, Button, Flex, Grid, Stack, VStack,HStack } from '@chakra-ui/react'
 import CardData from '@/app/PageComponents/Events.json'
 import Sidecomponents from '../PageComponents/Sidecomponents'
