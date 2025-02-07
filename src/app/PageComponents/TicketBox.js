@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { VStack, Text, Image, HStack, Flex } from '@chakra-ui/react'
+import { VStack, Text, Image, HStack, Flex, Box } from '@chakra-ui/react'
 
 
 
@@ -10,7 +10,7 @@ export default function TicketBox() {
     
         {  
             id: 1,
-            image: "./ticket-img.img",
+            image: "./ticket-img.png",
             dates: "Mon, 01 Dec 2021",
             event: "Yoga & Meditation : Theme Based ",
             age: "(35-80 years)",
@@ -25,7 +25,7 @@ export default function TicketBox() {
         },
         {
             id: 2,
-            image: "./ticket-img.img",
+            image: "./ticket-img.png",
             dates: "Mon, 01 Dec 2021",
             event: "Yoga & Meditation : Theme Based ",
             age: "(35-80 years)",
@@ -40,7 +40,7 @@ export default function TicketBox() {
         },
         {
             id: 3,
-            image: "./ticket-img.img",
+            image: "./ticket-img.png",
             dates: "Mon, 01 Dec 2021",
             event: "Yoga & Meditation : Theme Based ",
             age: "(35-80 years)",
@@ -55,7 +55,7 @@ export default function TicketBox() {
         },
         {
             id: 4,
-            image: "./ticket-img.img",
+            image: "./ticket-img.png",
             dates: "Mon, 01 Dec 2021",
             event: "Yoga & Meditation : Theme Based ",
             age: "(35-80 years)",
@@ -68,10 +68,22 @@ export default function TicketBox() {
             seat:"seat",
             seatType: "Silver, Class"
         },
-      
-        
-       
-       
+        {
+            id: 5,
+            image: "./ticket-img.png",
+            dates: "Mon, 01 Dec 2021",
+            event: "Yoga & Meditation : Theme Based ",
+            age: "(35-80 years)",
+            time: "04:00PM",
+            location: "OneNest: Mumbai",
+            ticketType: "M-Ticket",
+            day: "MON",
+            date: "09",
+            month: "DEC",
+            seat:"seat",
+            seatType: "Silver, Class"
+        },
+    
     ]
     
     return (
@@ -80,14 +92,16 @@ export default function TicketBox() {
             <VStack  key={data.id} gap={0} height={"184px"} width="398px" >
                 <Text  fontSize="12px" fontWeight="500" color="#666666" alignSelf={"flex-start"}>{data.dates}</Text>
                 <VStack width="398px" height="106px" bgColor=" #FFFFFF" padding={"12px 12px 0 12px"}  borderRadius={"4px"} >
-                    <Flex height={"80px"} direction={"row"} alignSelf={"flex-start"} >
-                        <Image src={data.image} alt="image" width={"60px"} hieght={"80px"} />
-                             <VStack alignItems={"start"} gap={0} marginLeft={"12px"}>
+                    <Flex height={"80px"} direction={"row"} alignSelf={"flex-start"}>
+                        <Image src={data.image} alt="image" width={"60px"} height={"80px"} />
+                        <Flex gap={5}>
+                        <VStack alignItems={"start"} gap={0} marginLeft={"12px"}>
                             <Text fontSize="14px" fontWeight="600" color="#333333" >{data.event}<br></br>{data.age}</Text>
                             <Text fontSize="12px" fontWeight="500" color="#666666" >{data.time}</Text>
                             <Text fontSize="12px" fontWeight="400" color="#666666" >{data.location}</Text>
                         </VStack>
-                         <Text marginTop={"12px"} marginLeft={"22px"} fontSize="12px" fontWeight="400" color="#666666">{data.ticketType}</Text>
+                         <Text  fontSize="12px" fontWeight="400" color="#666666" >{data.ticketType}</Text>
+                         </Flex>
                     </Flex>
                 </VStack>
                 <HStack height={"55px"} width={"398px"}  color={"#666666"} bgColor=" #FFFFFF" padding={"0px 12px 0 31px"} alignContent={"center"}  borderRadius={"4px"}  >
@@ -99,12 +113,11 @@ export default function TicketBox() {
                     <Flex>|</Flex>
                     <VStack  gap={0} alignItems={"self-start"} >
                         <Text fontSize="12px" fontWeight="400" >{data.seat}</Text>
-                        <Text fontSize="14px" fontWeight="500"> {}</Text>
+                        <Text fontSize="14px" fontWeight="500"> {data.seatType}</Text>
                     </VStack>
                 </HStack>      
             </VStack>
             ))}
         </>
-
     )
 }

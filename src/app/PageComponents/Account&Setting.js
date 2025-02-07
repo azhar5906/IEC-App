@@ -1,21 +1,22 @@
-
 import React from 'react'
-import Image from 'next/image'
 import { Stack, VStack, Text, Box, Flex } from '@chakra-ui/react'
+import Image from 'next/image'
 
-export default function HelpSupport() {
-    return (
-        <>
-            <VStack height={"887px"} width={"852px"} bgColor={" #F3F3F3"} padding={"20px"}>
+export default function AccountSetting() {
+  return ( 
+    <>
+    <VStack height={"887px"} width={"852px"} bgColor={" #F3F3F3"} padding={"20px"}>
                 <Box alignSelf={"self-start"}>
-                    <Text fontWeight={"600"} fontSize={"16px"}>Help & Supoort </Text>
+                    <Text fontWeight={"600"} fontSize={"16px"}>Account & Setting</Text>
                 </Box>
 
                 <Stack height={"306px"} paddingTop={"20px"} gap={1} >
-                    <Flex height={"60px"} width={"812px"} alignSelf={"flex-start"} bgColor={"#fff"} alignItems={"center"} justifyContent={"space-between"} padding={"20px"} borderRadius={"4px"}>
-                        <Text fontWeight="700" fontSize="18px" Color="#333333" >Recommended Topics</Text>
-                        <Flex width={"68px"} justifyContent={"space-between"}>
-                            <Text fontWeight="500" fontSize="14px" color="#0A84FF" >See all</Text>
+                    <Flex height={"92px"} width={"812px"} alignSelf={"flex-start"} bgColor={"#fff"} alignItems={"center"} justifyContent={"space-between"} padding={"20px"} borderRadius={"4px"}>
+                        <Box >
+                            <Text fontWeight="700" fontSize="18px" Color="#333333" >My Location</Text>
+                             <Text fontWeight={"400"} fontSize={"18px"} Color={"#333333"}>Mumbai:Western</Text>
+                        </Box>
+                        <Flex >
                             <Image src={"/RArrow.png"} alt="image" height={4} width={10} />
                         </Flex>
                     </Flex>
@@ -41,7 +42,6 @@ export default function HelpSupport() {
                     </Flex>
                 </Stack>
             </VStack>
-        </>
-
-    )
+    </>
+  )
 }

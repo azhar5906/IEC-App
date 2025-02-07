@@ -18,18 +18,6 @@ export default function PurchaseHis() {
                   <TicketBox/>
               </Grid>
             </Box>
-
-          
-            
-
-
-
-
-
-
-
-
-
         </VStack>
     </>
 
