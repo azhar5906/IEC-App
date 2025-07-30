@@ -3,8 +3,9 @@ import {
     NativeSelectField,
     NativeSelectRoot,
   } from "@/components/ui/native-select"
+  
   import { Button } from "@/components/ui/button"
-  import { Input } from "@chakra-ui/react"
+  import { Input, Text } from "@chakra-ui/react"
   import Image from "next/image"    
 
 
@@ -46,7 +47,7 @@ export default function LoginRegister() {
 
                     </div>
                            <div style={{height:"1px", width:"250px", backgroundColor:"#EEEEEE",  marginLeft:"16px" }}></div>
-                    <Button style={{ marginTop:"33px",height:"40px", width:"332px",backgroundColor:"#EEEEEE", border:"none", }}><li style={{fontWeight:"700", fontSize:"12px", lineHeight:"15px",color:"#999999"}} >CONTINUE</li></Button>
+                    <Button style={{ marginTop:"33px",height:"40px", width:"332px",backgroundColor:"#EEEEEE", border:"none", }}><Text style={{fontWeight:"700", fontSize:"12px", lineHeight:"15px",color:"#999999"}} >CONTINUE</Text></Button>
             </div>
 
             <div style={{height:"158px", width:"1px", backgroundColor:"#EEEEEE", alignSelf:"center"}}></div>
@@ -100,6 +101,7 @@ export default function LoginRegister() {
             /></div>
           <li>Total:<sup>₹</sup>470.00</li>
         </div>
+      
       
     </div>
 
